@@ -18,8 +18,8 @@ import '../../styles/app.css'
 const DefaultLayout = ({ children, bodyClass, isHome }) => {
 
     const site = {
-        "title": 'Bon Apetit!',
-        'subtitle': 'Recipes with Flotiq',
+        "title": 'The Mernu',
+        'subtitle': 'Recipes with Miranda and Fernanda',
         'twitterUrl': 'https://twitter.com/flotiq',
         'facebookUrl': 'https://www.facebook.com/Flotiq-104200727751200/',
         'siteUrl': ''
@@ -44,11 +44,18 @@ const DefaultLayout = ({ children, bodyClass, isHome }) => {
                                         <img className="site-logo" src={ Logo } alt="Recipes with Flotiq.com" />
                                     </Link>
                                 </div>
-                                <div className="site-mast-right">
+                                <nav className="site-mast-right">
+                                    <div className="site-nav-left">
+                                    </div>
+                                    <div className="site-nav-right">
+                                        <Link className="site-nav-button" to="/about">About</Link>
+                                    </div>
+                                </nav>
+                                {/* <div className="site-mast-right">
                                     { site.twitterUrl && <a href={ site.twitterUrl } className="site-nav-item" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/twitter.svg" alt="Twitter" /></a>}
                                     { site.facebookUrl && <a href={ site.facebookUrl } className="site-nav-item" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/facebook.svg" alt="Facebook" /></a>}
                                     <a className="site-nav-item" href={ `https://feedly.com/i/subscription/feed/${site.siteUrl}/rss/` } target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/rss.svg" alt="RSS Feed" /></a>
-                                </div>
+                                </div> */}
                             </div>
                             { isHome ?
                                 <div className="site-banner">
@@ -56,13 +63,6 @@ const DefaultLayout = ({ children, bodyClass, isHome }) => {
                                     <p className="site-banner-desc">{site.subtitle}</p>
                                 </div> :
                                 null}
-                            <nav className="site-nav">
-                                <div className="site-nav-left">
-                                </div>
-                                <div className="site-nav-right">
-                                    <Link className="site-nav-button" to="/about">About</Link>
-                                </div>
-                            </nav>
                         </div>
                     </header>
 

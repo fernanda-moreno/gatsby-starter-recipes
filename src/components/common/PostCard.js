@@ -6,6 +6,13 @@ import Servings from "../../images/user-solid.svg"
 
 const PostCard = ({ post }) => {
     const url = `/${post.slug}/`
+    function removeTags(str) { 
+        if ((str===null) || (str==='')) 
+            return false; 
+        else
+            str = str.toString(); 
+        return str.replace( /(<([^>]+)>)/ig, ''); 
+    }
 
     return (
         <Link to={url} className="post-card">
@@ -15,6 +22,7 @@ const PostCard = ({ post }) => {
                         backgroundImage: `url(https://api.flotiq.com/image/260x0/${post.image[0].id}.${post.image[0].extension})` ,
                     }}/> : <div className="post-card-image" />}
                 <h2 className="post-card-title">{post.name}</h2>
+                <p className="post-card-title">{removeTags(post.description)}</p>
             </header>
             <section className="post-card-tags">
                 <div><img className="post-card-tag-icon" alt="Servings" src={Servings}/> {post.servings}</div>
