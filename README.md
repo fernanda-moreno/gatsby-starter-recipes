@@ -5,7 +5,7 @@
 The Mernu
 ========================
 
-Website created for Miranda and Fernanda's favorite recipes!
+Website created for Miranda and Fernanda's favorite recipes! :)
 
 This is a [Gatsby](https://gatsbyjs.org) starter project for a recipes website. It's configured to pull recipe data from [Flotiq](https://flotiq.com) and can be easily deployed to your cloud hosting - Heroku, Netlify, Gatsby Cloud, etc.
 
