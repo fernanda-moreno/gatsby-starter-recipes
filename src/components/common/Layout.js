@@ -30,6 +30,7 @@ const DefaultLayout = ({ children, bodyClass, isHome }) => {
             <Helmet>
                 <html lang="en" />
                 <body className={bodyClass} />
+                <title>The Mernu</title>
             </Helmet>
 
             <div className="viewport">
