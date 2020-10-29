@@ -531,6 +531,22 @@ h6 {
     padding: 0 4vw;
 }
 
+.label {
+    width: 160%;
+    font-size: 400%;
+}
+
+.flex-grid {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.flex-grid .col {
+    width: 20%;
+    margin: 0 5vw;
+  }
+
 .content {
     margin: 0 auto;
     font-size: 2rem;
@@ -581,13 +597,19 @@ h6 {
     margin: 0 0 0.8em;
     font-size: 5rem;
 }
-@media (max-width: 500px) {
+@media (max-width: 700px) {
     .content-title {
         margin: 0.8em 0;
         font-size: 3.4rem;
     }
     .content {
         font-size: 1.8rem;
+    }
+    .flex-grid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
     }
 }
 
@@ -596,7 +618,7 @@ h6 {
     font-size: 3.2rem;
     font-weight: 700;
 }
-@media (max-width: 500px) {
+@media (max-width: 700px) {
     .content-body h2 {
         font-size: 2.6rem;
     }
@@ -607,7 +629,7 @@ h6 {
     font-size: 2.8rem;
     font-weight: 700;
 }
-@media (max-width: 500px) {
+@media (max-width: 700px) {
     .content-body h3 {
         font-size: 2.2rem;
     }
@@ -618,7 +640,7 @@ h6 {
     font-size: 2.4rem;
     font-weight: 700;
 }
-@media (max-width: 500px) {
+@media (max-width: 700px) {
     .content-body h4 {
         font-size: 2.2rem;
     }
@@ -777,6 +799,7 @@ h6 {
     display: grid;
     justify-content: space-between;
     grid-gap: 30px;
+    margin-top: 6vh;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
