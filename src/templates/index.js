@@ -97,8 +97,10 @@ const Index = props => {
                 onChange={handleChange}>
                 <MenuItem className={classes.menuItem} value="All">All</MenuItem>
                 <MenuItem className={classes.menuItem} value="Meal">Meal</MenuItem>
+                <MenuItem className={classes.menuItem} value="Breakfast">Breakfast</MenuItem>
                 <MenuItem className={classes.menuItem} value="Dessert">Dessert</MenuItem>
                 <MenuItem className={classes.menuItem} value="Snack">Snack</MenuItem>
+                <MenuItem className={classes.menuItem} value="Side">Side</MenuItem>
               </Select>
             </div>
           </div>
