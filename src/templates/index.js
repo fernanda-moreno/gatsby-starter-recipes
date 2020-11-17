@@ -104,11 +104,18 @@ const Index = props => {
               </Select>
             </div>
           </div>
-          <section className="post-feed">
-            {recipes.map(({ node }) => (
-              <PostCard key={node.id} post={node} />
-            ))}
-          </section>
+            {recipes.length > 0 ? (
+              <section className="post-feed">
+                {recipes.map(({ node }) => (
+                  <PostCard key={node.id} post={node} />
+                ))}
+              </section>
+              ) : (
+                <div className="center">
+                  We haven't made {query} yet!
+                </div>
+              )
+            }
           <Pagination pageContext={pageContext} />
         </div>
       </Layout>
