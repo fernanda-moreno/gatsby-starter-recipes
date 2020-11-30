@@ -54,11 +54,12 @@ const Index = props => {
     const { data, pageContext } = props
     const recipes = data.allRecipe.edges || []
     const filteredData = recipes.filter(post => {
-      const { description, name, tags } = post.node
+      const { description, name, tags, slug } = post.node
       return (
         description.toLowerCase().includes(query.toLowerCase()) ||
         name.toLowerCase().includes(query.toLowerCase()) ||
-        tags.toLowerCase().includes(query.toLowerCase())
+        tags.toLowerCase().includes(query.toLowerCase()) ||
+        slug.toLowerCase().includes(query.toLowerCase())
       )
     })
     setState({

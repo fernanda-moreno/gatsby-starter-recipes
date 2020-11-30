@@ -41,9 +41,10 @@ const DefaultLayout = ({ children, bodyClass, isHome }) => {
                         <div className="container">
                             <div className="site-mast">
                                 <div className="site-mast-left">
-                                    <Link to="/">
+                                    {/* <Link to="/">
                                         <img className="site-logo" src={ Logo } alt="Recipes with Flotiq.com" />
-                                    </Link>
+                                    </Link> */}
+                                    <Link className="site-nav-button" to="/">Home</Link>
                                 </div>
                                 <nav className="site-mast-right">
                                     <div className="site-nav-left">
