@@ -102,6 +102,7 @@ const Index = props => {
                 <MenuItem className={classes.menuItem} value="Dessert">Dessert</MenuItem>
                 <MenuItem className={classes.menuItem} value="Snack">Snack</MenuItem>
                 <MenuItem className={classes.menuItem} value="Side">Side</MenuItem>
+                <MenuItem className={classes.menuItem} value="Vegan">Vegan</MenuItem>
               </Select>
             </div>
           </div>
