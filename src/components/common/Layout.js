@@ -80,10 +80,10 @@ const DefaultLayout = ({ children, bodyClass, isHome }) => {
                     <footer className="site-foot">
                         <div className="site-foot-nav container">
                             <div className="site-foot-nav-left">
-                                <Link to="/">{site.title}</Link> © 2020 &mdash; Published with <a className="site-foot-nav-item" href="https://ghost.org" target="_blank" rel="noopener noreferrer">Ghost</a>
+                                <Link to="/">{site.title}</Link> © 2020
                             </div>
                             <div className="site-foot-nav-right">
-                                <a href="https://flotiq.com">Adapted to Flotiq.com</a>
+                                <a href="https://flotiq.com" target="_blank">Adapted to Flotiq.com</a>
                             </div>
                         </div>
                     </footer>
