@@ -119,7 +119,7 @@ const Index = props => {
                 </div>
               )
             }
-          <Pagination pageContext={pageContext} />
+          {/* <Pagination pageContext={pageContext} /> */}
         </div>
       </Layout>
     </>
